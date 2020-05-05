@@ -71,3 +71,4 @@ There is also configured phpstan to validate your code, just run `composer phpst
 ### @todo
 1. add .env support for frontend app
 2. translate calendar to polish lang
+3. update webpack-dev-server to latest version
