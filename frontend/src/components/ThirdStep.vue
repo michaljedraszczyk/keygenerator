@@ -4,7 +4,7 @@
       <ValidationObserver ref="observer" v-slot="{ passes }">
         <table class="table is-bordered">
           <tbody>
-          <tr v-for="row in summary">
+          <tr v-for="row in summary" v-bind:key="row.id">
             <td><strong>{{ row.name }}</strong></td>
             <td>{{ row.value }}</td>
           </tr>
@@ -33,15 +33,14 @@
 <script>
   import moment from 'moment'
   import "moment/locale/pl"
-  import {ValidationObserver, ValidationProvider} from "vee-validate";
+  import {ValidationObserver} from "vee-validate";
   import axios from 'axios'
 
   moment.locale("pl");
 
   export default {
     components: {
-      ValidationObserver,
-      ValidationProvider
+      ValidationObserver
     },
     props: {
       formsData: {
@@ -55,7 +54,7 @@
         this.$emit('currentStep', 0)
       },
       onSubmit() {
-        axios.post(`http://api.tebrekrutacja.test/api/date-keys/period`, {
+        axios.post(`${process.env.VUE_APP_API_HOST}/date-keys/period`, {
           from: this.from,
           to: this.to,
           keyTemplate: this.keyTemplate

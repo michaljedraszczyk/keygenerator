@@ -1,13 +1,13 @@
 .DS_Store
 node_modules/
-dist/
-npm-debug.log
-yarn-error.log
+/dist
+/public
 
-# Editor directories and files
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor settings
+.vscode
 .env.local

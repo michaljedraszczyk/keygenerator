@@ -43,16 +43,14 @@ Based on https://vuejs.org/
 ### 1. Setting up local environment
 Install node and npm
 
-### 2. Set variables
-change api host in ./src/components/ThirdStep.vue[:58] 
-
-.env file support is on @todo list
+### 2. .env file
+create your .env.local based on .env file, change variables for your own.
 
 ### 3. Running dev env
 To run frontend app just enter to ./frontend dir and turn on server by typing
 ```
 npm install
-npm run dev
+npm run serve
 ```
 U should see dev version of app.
 
@@ -69,6 +67,4 @@ After make your changes fix code by typing `composer csfix` to clean code style
 There is also configured phpstan to validate your code, just run `composer phpstan`
 
 ### @todo
-1. add .env support for frontend app
-2. translate calendar to polish lang
-3. update webpack-dev-server to latest version
+1. translate calendar to polish lang
