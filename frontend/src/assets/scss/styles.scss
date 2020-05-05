@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+@import url('https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css');
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+@import "~bulma/sass/utilities/_all";
+
+$family-sans-serif: 'Roboto', sans-serif;
+
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+body{
+  font-size: 0.8rem;
+}
+.label{
+  font-weight: 400;
+}
+
+.field{
+  margin: 10px 0;
+}
+
+.buttons-container{
+  padding: 20px 0;
+  display: flex;
+  border-top: 1px solid #e8e8e8;
+  margin-top:20px;
+
+  button.button{
+    margin: 0 20px;
+
+    &.left{
+      align-self: flex-start;
+      margin-left: 0;
+    }
+
+    &.right{
+      align-self: flex-end;
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+.button-letter{
+  margin: 5px;
+}
+
+.letters-container{
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.center-section{
+  padding: 50px 20px 0;
+  width: 50%;
+  min-width: 500px;
+  margin: 0 auto;
+}
+.b-steps .steps + .step-content{
+  padding: 20px 12%;
+}
+
+.b-steps.is-large .steps .step-items .step-item .step-details .step-title{
+  font-size: 1rem;
+}
+
+.success-info{
+  text-align: center;
+  margin-top:40px;
+
+  a{
+    margin-top:50px;
+  }
+
+  h1{
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+table.table{
+  width:100%;
+}
